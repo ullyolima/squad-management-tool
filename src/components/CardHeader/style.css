@@ -1,0 +1,10 @@
+.card-header {
+    border-bottom: 2px solid var(--card-teams-line-color);
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--card-titles-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}

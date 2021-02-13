@@ -1,0 +1,21 @@
+:root {
+    /* layout grid */
+    --header-height: 60px;
+    --footer-height: 45px;
+    --container-width: 90%;
+    --card-margin-top: 3rem;
+    --card-desk-width: calc((100% - 50px) / 2);
+
+    /* layout colors */
+    --main-bg-color: #f7f3f7;
+    --bg-gradient-linear: linear-gradient(90deg, rgba(191,14,79,1) 0%, rgba(139,32,111,1) 77%) ;
+    --card-bg-color: #ffffff;
+    --card-teams-line-color: #f0f0f0;
+    --card-list-top5-bg-color: #e7e1e6;
+    --card-titles-color: #59318d;
+    --card-text-color: #3f3f3f;
+    --selected-team-bg-color: #f7eef7;
+    --selected-team-text-color: #b23f7d;
+    --selected-player-border-color: #b23f7d;
+    --footer-bg-color: #e9e3e9;
+}

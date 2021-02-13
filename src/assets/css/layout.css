@@ -1,0 +1,15 @@
+.d-flex { 
+    display: flex; 
+}
+
+.body-container { 
+    background-color: var(--main-bg-color); 
+    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+}
+
+.container { 
+    align-items: center; 
+    display: flex; 
+    margin: 0 auto;
+    width: var(--container-width); 
+}
