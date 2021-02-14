@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="app-rights">
-                <p>2020 - All rights reserved</p>
+                <p>2021 - All rights reserved</p>
             </div>
         </div>
     )

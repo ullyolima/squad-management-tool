@@ -1,0 +1,18 @@
+.sort-buttons { 
+    padding: var(--card-inside-align); 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sort-name, .sort-description {
+    height: var(--card-sort-row-height);
+}
+
+.sort-name span, .sort-description span {
+    line-height: var(--card-sort-row-height);
+}
+
+.sort-description {
+    padding-left: 1rem;
+    border-left: 2px solid var(--card-teams-line-color);
+}

@@ -4,6 +4,7 @@ import Footer from './Footer/Footer'
 import CardContainer from './CardContainer/CardContainer'
 import CardHeader from './CardHeader/CardHeader'
 import AddButton from './AddButton/AddButton'
+import CardBodyTeams from './CardBodyTeams/CardBodyTeams'
 
 function MainContainer() {
     return (
@@ -11,9 +12,8 @@ function MainContainer() {
             <Header />
             <div className="body-container">
                 <div className="container">
-                    <CardContainer />
-                    <CardContainer />
-
+                    <CardContainer title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />}/>
+                    <CardContainer title="Top 5"/>
                 </div>
             </div>
             <Footer />
