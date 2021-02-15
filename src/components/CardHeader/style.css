@@ -2,11 +2,20 @@
     align-items: center;
     border-bottom: 2px solid var(--card-teams-line-color);
     justify-content: space-between;
-    padding: var(--card-inside-align);
+    height: var(--card-header-height);
+    padding-left: var(--card-inside-align-mob);
+    padding-right: var(--card-inside-align-mob);
 }
 
 .card-title {
     color: var(--card-titles-color);
     font-size: 1.6rem;
     font-weight: 700;
+}
+
+@media screen and (min-width: 1020px) {
+    .card-header {
+        padding-left: var(--card-inside-align-desk);
+        padding-right: var(--card-inside-align-desk);
+    }
 }

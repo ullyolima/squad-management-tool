@@ -2,9 +2,9 @@ import React from 'react'
 import './style.css'
 import CardHeader from '../CardHeader/CardHeader'
 
-function CardContainer({title, button, cardBody}) {
+function CardContainer({customClass, title, button, cardBody}) {
     return (
-        <div className="card-container">
+        <div className={`card-container ${customClass}`}>
             <CardHeader title={title} button={button}/>
             <div>{cardBody}</div>
         </div>

@@ -12,8 +12,8 @@ function MainContainer() {
             <Header />
             <div className="body-container">
                 <div className="container">
-                    <CardContainer title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />}/>
-                    <CardContainer title="Top 5"/>
+                    <CardContainer customClass="card-teams" title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />}/>
+                    <CardContainer customClass="card-top5" title="Top 5"/>
                 </div>
             </div>
             <Footer />

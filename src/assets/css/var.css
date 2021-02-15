@@ -5,8 +5,11 @@
     --container-width: 90%;
     --card-margin-top: 3rem;
     --card-desk-width: calc((100% - 50px) / 2);
-    --card-inside-align: 1rem 1.5rem;
+    --card-header-height: 80px;
+    --card-inside-align-mob: 1rem;
+    --card-inside-align-desk: 1.5rem;
     --card-sort-row-height: 40px;
+    --body-container-min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 
     /* layout colors */
     --card-button-bg: linear-gradient(180deg, rgba(169,57,122,1) 18%, rgba(142,53,127,1) 52%);

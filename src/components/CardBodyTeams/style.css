@@ -1,10 +1,17 @@
 .sort-buttons { 
-    padding: var(--card-inside-align); 
+    align-items: center;
+    height: var(--card-header-height);
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding-left: var(--card-inside-align-mob); 
+    padding-right: var(--card-inside-align-mob); 
 }
 
 .sort-name, .sort-description {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
     height: var(--card-sort-row-height);
 }
 
@@ -12,7 +19,18 @@
     line-height: var(--card-sort-row-height);
 }
 
+.sort-name {
+    margin-right: 1rem;
+}
+
 .sort-description {
     padding-left: 1rem;
     border-left: 2px solid var(--card-teams-line-color);
+}
+
+@media screen and (min-width: 1020px) {
+    .sort-buttons { 
+        padding-left: var(--card-inside-align-desk); 
+        padding-right: var(--card-inside-align-desk); 
+    }
 }

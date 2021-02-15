@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import sortIcon from "../../assets/img/sort-icon.png"
+import CardTeamsRow from '../CardTeamsRow/CardTeamsRow'
 
 function CardBodyTeams() {
     return (
@@ -15,7 +16,11 @@ function CardBodyTeams() {
                     <img src={sortIcon} alt="Sort icon"/>
                 </div>
             </div>
-            
+            <div className="card-body-teams-row">
+                <CardTeamsRow teamName="Barcelona" teamDescription="Barcelona Squad"/>
+                <CardTeamsRow teamName="Real Madrid" teamDescription="Real Madrid Squad"/>
+                <CardTeamsRow teamName="Milan" teamDescription="Milan Squad"/>
+            </div>            
         </div>
     )
 }

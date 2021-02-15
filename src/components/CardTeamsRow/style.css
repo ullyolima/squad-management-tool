@@ -1,0 +1,50 @@
+.team-row {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.2fr;
+    align-items: center;
+    height: 65px;
+    margin-left: calc(var(--card-inside-align-mob) / 2); 
+    margin-right: calc(var(--card-inside-align-mob) / 2); 
+    padding-left: calc(var(--card-inside-align-mob) / 2); 
+    padding-right: calc(var(--card-inside-align-mob) / 2);
+    border-bottom: 1px solid var(--card-teams-line-color);
+}
+
+.team-description {
+    padding-left: 1.3rem;
+}
+
+.team-options {
+    display: none;
+}
+
+.team-row.selected {
+    background-color: var(--selected-team-bg-color);
+    border-radius: 15px;
+    border-bottom: 0;
+}
+
+.team-row.selected .team-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-options a {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1020px) {
+    .team-row {
+        grid-template-columns: 1.5fr 2fr 1fr;
+    }
+    .team-description {
+        padding-left: 1rem;
+    }
+    .team-row {
+        margin-left: calc(var(--card-inside-align-desk) / 2); 
+        margin-right: calc(var(--card-inside-align-desk) / 2); 
+        padding-left: calc(var(--card-inside-align-desk) / 2); 
+        padding-right: calc(var(--card-inside-align-desk) / 2);
+    }
+}

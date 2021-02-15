@@ -1,4 +1,5 @@
 .body-container .container { 
+    align-items: start;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -6,17 +7,22 @@
 .card-container { 
     background-color: var(--card-bg-color); 
     border-radius: 15px; 
+    color: #494949;
     margin-top: var(--card-margin-top);
     min-height: 150px;
     width: 100%; 
     box-shadow: 0px 0px 16px 6px rgba(235,235,235,1);
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1200px) {
     .body-container .container { 
         flex-direction: row;
      }
     .card-container { 
         width: var(--card-desk-width); 
+    }
+    .card-teams {
+        min-height: calc(var(--body-container-min-height) - 3rem);
+        border-radius: 15px 15px 0 0;
     }
 }

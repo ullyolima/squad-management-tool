@@ -1,10 +1,15 @@
+* { 
+    font-size: 16px;
+}
+
 .d-flex { 
     display: flex; 
 }
 
 .body-container { 
     background-color: var(--main-bg-color); 
-    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+    min-height: var(--body-container-min-height);
+    padding-bottom: 3rem;
 }
 
 .container { 
@@ -12,4 +17,19 @@
     display: flex; 
     margin: 0 auto;
     width: var(--container-width); 
+}
+
+/*=====================*\
+    media querie
+\*=====================*/
+@media screen and (min-width: 760px) {
+    * { 
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .body-container { 
+      padding-bottom: 0;
+    }
 }
