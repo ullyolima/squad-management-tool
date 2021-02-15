@@ -22,6 +22,8 @@
     background-color: var(--selected-team-bg-color);
     border-radius: 15px;
     border-bottom: 0;
+    color: var(--selected-team-text-color);
+    font-weight: 500;
 }
 
 .team-row.selected .team-options {
