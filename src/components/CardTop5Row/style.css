@@ -1,0 +1,14 @@
+.card-top5-row {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: .3rem;
+}
+
+.card-top5-row.selected {
+    border: 1px solid var(--selected-top5-border-color);
+}

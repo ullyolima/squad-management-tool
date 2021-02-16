@@ -20,6 +20,12 @@
     width: var(--container-width); 
 }
 
+.sec-title {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .8rem;
+}
+
 /*=====================*\
     media querie
 \*=====================*/
