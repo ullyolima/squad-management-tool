@@ -20,6 +20,10 @@
     width: var(--container-width); 
 }
 
+.grid-card {
+    width: 100%;
+}
+
 .sec-title {
     font-weight: 500;
     font-size: 1rem;
@@ -38,5 +42,9 @@
 @media screen and (min-width: 1200px) {
     .body-container { 
       padding-bottom: 0;
+    }
+    .grid-card {
+        width: var(--card-desk-width); 
+
     }
 }

@@ -18,11 +18,14 @@
     .body-container .container { 
         flex-direction: row;
      }
-    .card-container { 
-        width: var(--card-desk-width); 
-    }
     .card-teams {
-        min-height: calc(var(--body-container-min-height) - 3rem);
+        min-height: calc(var(--body-container-min-height) - 8rem);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .card-teams {
+        min-height: calc(var(--body-container-min-height) - 1rem);
         border-radius: 15px 15px 0 0;
     }
 }

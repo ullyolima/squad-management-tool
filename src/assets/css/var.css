@@ -2,7 +2,7 @@
     /* layout grid */
     --header-height: 60px;
     --footer-height: 45px;
-    --container-width: 90%;
+    --container-width: 95%;
     --card-margin-top: 3rem;
     --card-desk-width: calc((100% - 50px) / 2);
     --card-header-height: 80px;
@@ -24,4 +24,5 @@
     --selected-team-text-color: #b23f7d;
     --selected-top5-border-color: #d25f85;
     --footer-bg-color: #e9e3e9;
+    --picked-player-bg-gradient: linear-gradient(180deg, rgba(188,62,123,1) 0%, rgba(109,49,136,1) 85%);
 }
