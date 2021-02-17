@@ -1,28 +1,37 @@
 :root {
-    /* layout grid */
+    /** layout grid **/
     --header-height: 60px;
     --footer-height: 45px;
     --container-width: 95%;
-    --card-margin-top: 3rem;
+    --body-container-min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
     --card-desk-width: calc((100% - 50px) / 2);
+    --card-margin-and-bottom-top: 3rem;
     --card-header-height: 80px;
     --card-inside-align-mob: 1rem;
     --card-inside-align-desk: 1.5rem;
     --card-sort-row-height: 40px;
-    --body-container-min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
-
-    /* layout colors */
-    --card-button-bg: linear-gradient(180deg, rgba(169,57,122,1) 18%, rgba(142,53,127,1) 52%);
+    
+    /** layout colors **/
     --main-bg-color: #f7f3f7;
-    --bg-gradient-linear: linear-gradient(90deg, rgba(191,14,79,1) 0%, rgba(139,32,111,1) 77%) ;
+    --footer-bg-color: #e9e3e9;
+    --card-titles-color: #59318d;
     --card-bg-color: #ffffff;
+    --card-text-color: #3f3f3f;
+    /* home */
     --card-teams-line-color: #f0f0f0;
     --card-list-top5-bg-color: #e7e1e6;
-    --card-titles-color: #59318d;
-    --card-text-color: #3f3f3f;
     --selected-team-bg-color: #f7eef7;
     --selected-team-text-color: #b23f7d;
     --selected-top5-border-color: #d25f85;
-    --footer-bg-color: #e9e3e9;
+    --card-button-bg: linear-gradient(180deg, rgba(169,57,122,1) 18%, rgba(142,53,127,1) 52%);
+    --bg-gradient-linear: linear-gradient(90deg, rgba(191,14,79,1) 0%, rgba(139,32,111,1) 77%) ;
     --picked-player-bg-gradient: linear-gradient(180deg, rgba(188,62,123,1) 0%, rgba(109,49,136,1) 85%);
+    /* create team */
+    --title-section-color-create-your-team: #8d8d8d;
+    --inputs-border-color: #e8e8e8;
+    --radius-btn-text-color: #d13869;
+    --warning-input-color: #ca1952;
+    --tag-bg-color: #c50341;
+    --payler-text-color: #c50845;
+    --field-formation-bg-gradient:  linear-gradient(180deg, rgba(167,56,124,1) 0%, rgba(120,45,128,1) 100%);;
 }

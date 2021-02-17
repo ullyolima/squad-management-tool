@@ -1,0 +1,141 @@
+.team-information {
+    text-align: center;
+}
+
+.team-information input, .team-information textarea {
+    font-size: 1rem;
+}
+
+.team-information input:focus, .team-information textarea:focus {
+    outline: none;
+}
+
+.team-information__title {
+    text-transform: uppercase;
+    color: var(--title-section-color-create-your-team);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    gap: 3rem;
+}
+
+.input-title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input, .form-team-description textarea, .tag-container {
+    border: 1px solid var(--inputs-border-color);
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.form-team-name input, .form-team-description textarea, .form-team-website input {
+    width: 100%;
+}
+
+.form-team-description textarea {
+    height: 200px;
+}
+
+.form-team-type {
+    margin-top: 3rem;
+}
+
+.form-team-type input {
+    margin-right: 1rem;
+}
+
+.form-team-type label {
+    margin-right: 2rem;
+    color: var(--title-section-color-create-your-team);
+    font-size: 1rem;
+}
+
+input[type='radio']:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid var(--inputs-border-color);
+}
+
+.form-team-type input[type='radio']:checked:after {
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: -1px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(180deg, rgba(167,56,124,1) 30%, rgba(125,52,132,1) 100%);
+    content: '';
+    visibility: visible;
+    border: 2px solid rgb(228, 194, 224);
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.form-team-type input[type='radio']:checked + label {
+    color: var(--radius-btn-text-color);
+}
+
+.form-team-tags input {
+    border: none;
+    width: 100%;
+    flex: 1;
+}
+
+.tag-container {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.tag-container input {
+    padding: 0 .5rem;
+}
+
+.form-group {
+    width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+    .team-information input, .team-information textarea {
+        font-size: .9rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+        gap: 5rem;
+    }
+   
+    .form-team-type label {
+        font-size: .9rem;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .form-grid {
+        width: 80%;
+        gap: 10rem;
+    } 
+}

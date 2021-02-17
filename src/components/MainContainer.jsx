@@ -12,11 +12,10 @@ import PickedPlayer from './PickedPlayer/PickedPlayer'
 function MainContainer() {
     return (
         <div className="main-container">
-            <Header />
             <div className="body-container">
                 <div className="container">
                     <div className="grid-card">
-                        <CardContainer customClass="card-teams" title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />}/>
+                        <CardContainer customClass="card-teams" title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />} />
                     </div>
                     <div className="grid-card">
                         <CardContainer customClass="card-top5" title="Top 5" cardBody={<CardBodyTop5 highestList={<HighestList />} lowestList={<LowestList />} />} />
@@ -24,7 +23,6 @@ function MainContainer() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import './assets/css/reset.css';
 import './assets/css/layout.css';
 import './assets/css/var.css';
-import MainContainer from './components/MainContainer';
+import RoutesConfig from './Routes/RoutesConfig';
 
 function App() {
   return (
     <div className="App">
-      <MainContainer />      
+      <RoutesConfig />   
     </div>
   );
 }

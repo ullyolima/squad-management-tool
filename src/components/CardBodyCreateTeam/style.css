@@ -1,0 +1,10 @@
+.card-body__create-team {
+    padding: 2rem var(--card-inside-align-mob);
+}
+
+@media screen and (min-width: 1020px) {
+    .card-body__create-team { 
+        padding-left: var(--card-inside-align-desk); 
+        padding-right: var(--card-inside-align-desk); 
+    }
+}
