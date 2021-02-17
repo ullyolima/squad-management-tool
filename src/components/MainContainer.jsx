@@ -8,6 +8,7 @@ import CardBodyTop5 from './CardBodyTop5/CardBodyTop5'
 import HighestList from './HighestList/HighestList'
 import LowestList from './LowestList/LowestList'
 import PickedPlayer from './PickedPlayer/PickedPlayer'
+import { Link } from 'react-router-dom'
 
 function MainContainer() {
     return (
@@ -15,7 +16,7 @@ function MainContainer() {
             <div className="body-container">
                 <div className="container">
                     <div className="grid-card">
-                        <CardContainer customClass="card-teams" title="My Teams" button={<AddButton />} cardBody={<CardBodyTeams />} />
+                        <CardContainer customClass="card-teams" title="My Teams" button={<Link to="create-your-team"><AddButton /></Link>} cardBody={<CardBodyTeams />} />
                     </div>
                     <div className="grid-card">
                         <CardContainer customClass="card-top5" title="Top 5" cardBody={<CardBodyTop5 highestList={<HighestList />} lowestList={<LowestList />} />} />
