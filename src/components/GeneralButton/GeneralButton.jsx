@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function Button({buttonName}) {
+function GeneralButton({buttonName}) {
     return (
         <div className="general-button">
             <a className="btn">{buttonName}</a> 
@@ -9,4 +9,4 @@ function Button({buttonName}) {
     )
 }
 
-export default Button
+export default GeneralButton

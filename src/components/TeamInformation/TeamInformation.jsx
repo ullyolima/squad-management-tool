@@ -5,7 +5,7 @@ import Tag from '../Tag/Tag'
 function TeamInformation() {
     return (
         <div className="team-information">
-            <h3 className="team-information__title">Team information</h3>
+            <h3 className="create-team__subtitle">Team information</h3>
             <div className="form-grid">
                 <div className="form-column">
                     <div className="form-group form-team-name">
@@ -24,9 +24,9 @@ function TeamInformation() {
                     </div>
                     <div className="form-group form-team-type">
                         <span className="input-title">Team type</span>
-                        <input type="radio" name="form-team-type" id="form__team-real" />
+                        <input type="radio" name="form-team-type" id="form__team-real" value="real" checked />
                         <label htmlFor="form__team-real">Real</label>
-                        <input type="radio" name="form-team-type" id="form__team-fantasy" />
+                        <input type="radio" name="form-team-type" id="form__team-fantasy" value="fantasy" />
                         <label htmlFor="">Fantasy</label>
                     </div>
                     <div className="form-group form-team-tags">

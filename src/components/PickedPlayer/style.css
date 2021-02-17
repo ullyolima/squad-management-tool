@@ -28,9 +28,13 @@
 }
 
 .player-picture, .picture-moldure {
-    width: 130px;
-    height: 130px;
     border-radius: 50%;
+}
+
+.picture-moldure {
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
 
 .player-picture {
@@ -39,6 +43,13 @@
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+}
+
+.player-picture, .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .most-picked-player .picture-moldure {
@@ -75,14 +86,10 @@
 }
 
 .circle {
-    position: absolute;
     height: 90px;
     width: 90px;
     border-radius: 50%;
     border: 2px solid #ffffff25;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .most-picked-player {
@@ -125,9 +132,9 @@
 }
 
 @media screen and (min-width: 1800px) {
-    .player-picture, .picture-moldure {
-        width: 180px;
-        height: 180px;
+    .picture-moldure {
+        width: 200px;
+        height: 200px;
     }
     .player-picture {
         width: 180px;

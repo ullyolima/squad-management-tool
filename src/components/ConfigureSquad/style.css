@@ -1,0 +1,69 @@
+.configure-squad .input-title {
+    margin-right: 1rem;
+}
+
+#configure-squad__formation {   
+    -webkit-appearance: none; 
+     -moz-appearance: none; 
+     appearance: none; 
+     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5MS45OTYgNDkxLjk5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDg0LjEzMiwxMjQuOTg2bC0xNi4xMTYtMTYuMjI4Yy01LjA3Mi01LjA2OC0xMS44Mi03Ljg2LTE5LjAzMi03Ljg2Yy03LjIwOCwwLTEzLjk2NCwyLjc5Mi0xOS4wMzYsNy44NmwtMTgzLjg0LDE4My44NDggICAgTDYyLjA1NiwxMDguNTU0Yy01LjA2NC01LjA2OC0xMS44Mi03Ljg1Ni0xOS4wMjgtNy44NTZzLTEzLjk2OCwyLjc4OC0xOS4wMzYsNy44NTZsLTE2LjEyLDE2LjEyOCAgICBjLTEwLjQ5NiwxMC40ODgtMTAuNDk2LDI3LjU3MiwwLDM4LjA2bDIxOS4xMzYsMjE5LjkyNGM1LjA2NCw1LjA2NCwxMS44MTIsOC42MzIsMTkuMDg0LDguNjMyaDAuMDg0ICAgIGM3LjIxMiwwLDEzLjk2LTMuNTcyLDE5LjAyNC04LjYzMmwyMTguOTMyLTIxOS4zMjhjNS4wNzItNS4wNjQsNy44NTYtMTIuMDE2LDcuODY0LTE5LjIyNCAgICBDNDkxLjk5NiwxMzYuOTAyLDQ4OS4yMDQsMTMwLjA0Niw0ODQuMTMyLDEyNC45ODZ6IiBmaWxsPSIjMzUzNTM1IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==") 
+     no-repeat #ffffff;  
+     background-size: 16px 16px;
+     background-position: 120px center;  
+     width: 150px;  
+     height:35px;   
+     border:1px solid var(--inputs-border-color);
+     border-radius: 5px;
+     padding: 0 .5rem;
+     font-weight: 500;
+     font-size: .9rem;
+}
+
+.configure-squad select:focus {
+    outline: none;
+}
+
+.soccer-field {
+    position: relative;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 450px;
+    height: 650px;
+    background: var(--picked-player-bg-gradient);
+}
+
+.field-circle, .field-line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.field-circle {
+    border: 1px solid #ffffff6b;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.field-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff6b;
+}
+
+.search-players .input-title {
+    display: block;
+}
+
+.search-players__input {
+    width: 100%;
+    border: 1px solid var(--inputs-border-color);
+    border-radius: 5px;
+    padding: .3rem;
+}
+
+.search-player__result {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--inputs-border-color);
+}

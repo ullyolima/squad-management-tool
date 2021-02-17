@@ -1,0 +1,107 @@
+.field-player {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #c87ec5;
+}
+
+.field-player, .inner-circle {
+    border-radius: 50%;
+}
+
+.inner-circle, .plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff70;
+    border: 1px solid  --payler-text-color;
+}
+
+.plus {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.soccer-formation {
+    padding: 1rem;
+}
+
+.soccer-formation .kepper {
+    justify-content: center;
+}
+
+
+/* Formation 3-2-2-3 */
+
+[data-formation="3232"] .l-1 {
+    margin-top: 1.5rem;
+}
+
+[data-formation="3232"] .l-4 {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+}
+
+[data-formation="3232"] .l-2, [data-formation="3232"] .l-3 {
+    justify-content: space-around;
+}
+
+[data-formation="3232"] .l-2 {
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+    padding: 0 1rem;
+}
+
+[data-formation="3232"] .l-3 {
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Formation 3-2-2-3 */
+[data-formation="3223"] .l-1 {
+    margin-top: 2rem;
+}
+
+[data-formation="3223"] .l-1, 
+[data-formation="3223"] .l-4,
+[data-formation="3232"] .l-1 {
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+[data-formation="3223"] .l-2, [data-formation="3223"] .l-3 {
+    justify-content: space-around;
+}
+
+[data-formation="3223"] .l-2 {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+}
+
+[data-formation="3223"] .l-3 {
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+}

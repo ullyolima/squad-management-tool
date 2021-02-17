@@ -5,7 +5,7 @@ import CardTeamsRow from '../CardTeamsRow/CardTeamsRow'
 
 function CardBodyTeams() {
     return (
-        <div className="card-body-teams">
+        <div className="card-body__teams">
             <div className="sort-buttons d-flex">
                 <div className="sort-name">
                     <span>Name</span>

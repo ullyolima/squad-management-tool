@@ -2,9 +2,45 @@
     padding: 2rem var(--card-inside-align-mob);
 }
 
+.create-team__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-section-color-create-your-team);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    gap: 3rem;
+}
+
+.input-title {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 760px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+        gap: 5rem;
+    }
+}
+
 @media screen and (min-width: 1020px) {
     .card-body__create-team { 
         padding-left: var(--card-inside-align-desk); 
         padding-right: var(--card-inside-align-desk); 
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .form-grid {
+        width: 80%;
+        gap: 10rem;
+    } 
 }

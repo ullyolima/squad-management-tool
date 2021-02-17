@@ -3,7 +3,7 @@ import './style.css'
 
 function CardBodyTop5({ highestList, lowestList }) {
     return (
-        <div className="card-body-top5">
+        <div className="card-body__top5">
             <div className="highest-avg">
                 <h3 className="sec-title">Highest avg age</h3>
                 <div className="avg-container">

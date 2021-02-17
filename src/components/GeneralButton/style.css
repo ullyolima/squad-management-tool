@@ -1,0 +1,12 @@
+.general-button {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background: var(--field-formation-bg-gradient);
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 700;
+    width: 450px;
+    text-align: center;
+    border: 1px solid var(--payler-text-color);
+    box-shadow: 0px 3px 8px 5px #c5084420;
+}
