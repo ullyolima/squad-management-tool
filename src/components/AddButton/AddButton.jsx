@@ -3,7 +3,7 @@ import './style.css'
 
 function AddButton() {
     return (
-        <a className="add-button">+</a>
+        <span className="add-button">+</span>
     )
 }
 
