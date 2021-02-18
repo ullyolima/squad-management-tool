@@ -28,6 +28,12 @@
     border-left: 2px solid var(--card-teams-line-color);
 }
 
+.card-body-teams-row {
+    height: var(--card-body-teams-row);
+    overflow-y: scroll;
+}
+
+
 @media screen and (min-width: 1020px) {
     .sort-buttons { 
         padding-left: var(--card-inside-align-desk); 

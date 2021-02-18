@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardTop5Row from '../CardTop5Row/CardTop5Row'
+import api from '../../service/api'
 
 function LowestList() {
+
+    const [lowestAvg, setLowestAvg] = useState([])
+
+    useEffect(() => {
+        api.getLowestAvg().then( res => setLowestAvg(res))
+    }, [setLowestAvg])
+
     return (
         <div className="lowest-list">
-            <CardTop5Row teamName="Zagiris Vilnus" teamScore="21.9" />
-            <CardTop5Row teamName="Vilgardium LV" teamScore="21.7" />
-            <CardTop5Row teamName="Avada Kedavra" teamScore="21.6" />
-            <CardTop5Row teamName="Bestial FC" teamScore="21.4" />
-            <CardTop5Row teamName="BMP" teamScore="21.3" />
+            {lowestAvg.map(avgTeam => <CardTop5Row key={avgTeam.id} teamName={avgTeam.name} teamScore={avgTeam.avgage} />)}
         </div>
     )
 }

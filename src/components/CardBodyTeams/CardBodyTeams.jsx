@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
 import sortIcon from "../../assets/img/sort-icon.png"
 import CardTeamsRow from '../CardTeamsRow/CardTeamsRow'
+import api from '../../service/api'
 
 function CardBodyTeams() {
+    
+    const [teams, setTeams] = useState([])
+
+    useEffect(() => {
+        api.getTeams().then(res => setTeams(res))
+    }, [setTeams])
+
     return (
         <div className="card-body__teams">
             <div className="sort-buttons d-flex">
@@ -17,9 +25,7 @@ function CardBodyTeams() {
                 </div>
             </div>
             <div className="card-body-teams-row">
-                <CardTeamsRow teamName="Barcelona" teamDescription="Barcelona Squad"/>
-                <CardTeamsRow teamName="Real Madrid" teamDescription="Real Madrid Squad"/>
-                <CardTeamsRow teamName="Milan" teamDescription="Milan Squad"/>
+                {teams.map(team => <CardTeamsRow key={team.id} id={team.id} teamName={team.name} teamDescription={team.description}/>)}
             </div>            
         </div>
     )

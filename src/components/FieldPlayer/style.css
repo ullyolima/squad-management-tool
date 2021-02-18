@@ -1,7 +1,7 @@
 .field-player {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border: 1px dashed #c87ec5;
 }
 
@@ -17,14 +17,14 @@
 }
 
 .inner-circle {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     background-color: #ffffff70;
     border: 1px solid  --payler-text-color;
 }
 
 .plus {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
 }
@@ -36,6 +36,57 @@
 .soccer-formation .kepper {
     justify-content: center;
 }
+
+
+@media screen and (min-width: 760px) {
+    .field-player {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border: 1px dashed #c87ec5;
+    }
+    
+    .field-player, .inner-circle {
+        border-radius: 50%;
+    }
+    
+    .inner-circle, .plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .inner-circle {
+        width: 70px;
+        height: 70px;
+        background-color: #ffffff70;
+        border: 1px solid  --payler-text-color;
+    }
+    
+    .plus {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    
+    .soccer-formation {
+        padding: 1rem;
+    }
+    
+    .soccer-formation .kepper {
+        justify-content: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
 
 
 /* Formation 3-2-2-3 */

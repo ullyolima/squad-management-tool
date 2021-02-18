@@ -14,6 +14,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 90%;
+    margin: 0 auto;
     gap: 3rem;
 }
 
@@ -38,7 +39,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .form-grid {
         width: 80%;
         gap: 10rem;
@@ -200,7 +201,7 @@ input[type='radio']:after {
     border-radius: 5px;
     margin-top: 2rem;
     width: 100%;
-    height: 650px;
+    height: 450px;
     background: var(--picked-player-bg-gradient);
 }
 
@@ -236,10 +237,18 @@ input[type='radio']:after {
 }
 
 .search-player__result {
+    height: 300px;
+    overflow-y: scroll;
     padding: 1rem 0;
     border-bottom: 1px solid var(--inputs-border-color);
 }
 
+
+@media screen and (min-width: 760px) {
+    .soccer-field {
+        height: 650px;
+    }
+}
 
 
 /* button */

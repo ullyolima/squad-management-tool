@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
 import CardTop5Row from '../CardTop5Row/CardTop5Row'
+import api from '../../service/api'
 
 function HighestList() {
+
+    const [highestAvg, setHighestAvg] = useState([])
+
+    useEffect(() => {
+        api.getHighestAvg().then(res => setHighestAvg(res))
+    }, [setHighestAvg])
+
     return (
         <div className="highest-list">
-            <CardTop5Row teamName="Inter Milan" teamScore="31.9" />
-            <CardTop5Row teamName="APOEL Nicosia" teamScore="31.7" />
-            <CardTop5Row teamName="AC Milan" teamScore="31.6" />
-            <CardTop5Row teamName="Besiktas JK" teamScore="31.4" />
-            <CardTop5Row teamName="Real Madrid BA" teamScore="31.3" />
+            {highestAvg.map(avgTeam => <CardTop5Row key={avgTeam.id} teamName={avgTeam.name} teamScore={avgTeam.avgage} />)}
         </div>
     )
 }

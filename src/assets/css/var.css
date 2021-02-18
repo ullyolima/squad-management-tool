@@ -4,6 +4,7 @@
     --footer-height: 45px;
     --container-width: 95%;
     --body-container-min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+    --card-body-teams-row: calc(100vh - (var(--header-height) + var(--footer-height) + (var(--card-header-height) * 2) + 3rem ));
     --card-desk-width: calc((100% - 50px) / 2);
     --card-margin-and-bottom-top: 3rem;
     --card-header-height: 80px;
@@ -33,5 +34,6 @@
     --warning-input-color: #ca1952;
     --tag-bg-color: #c50341;
     --payler-text-color: #c50845;
+    --payler-selected-text-color: #c5084418;
     --field-formation-bg-gradient:  linear-gradient(180deg, rgba(167,56,124,1) 0%, rgba(120,45,128,1) 100%);
 }

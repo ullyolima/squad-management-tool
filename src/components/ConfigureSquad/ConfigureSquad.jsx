@@ -1,6 +1,5 @@
 import React from 'react'
 import FieldPlayer from '../FieldPlayer/FieldPlayer'
-import GeneralButton from '../GeneralButton/GeneralButton'
 import Player from '../Player/Player'
 import './style.css'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from '../components/Header/Header'
 import MainContainer from '../components/MainContainer'
 import CreateYourTeam from '../components/CreateYourTeam/CreateYourTeam'
@@ -9,10 +9,10 @@ function RoutesConfig() {
     return (
         <BrowserRouter>
             <Header />
-            <Routes>
-                <Route path="/" element={<MainContainer />} />
-                <Route path="create-your-team" element={<CreateYourTeam />} />
-            </Routes>    
+            <Switch>
+                <Route exact path="/" children={<MainContainer />} />
+                <Route path="/create-your-team" children={<CreateYourTeam />} />
+            </Switch>    
             <Footer />    
         </BrowserRouter>
     )

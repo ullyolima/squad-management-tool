@@ -19,7 +19,7 @@
         flex-direction: row;
      }
     .card-teams {
-        min-height: calc(var(--body-container-min-height) - 8rem);
+        height: calc(var(--body-container-min-height) - 8rem);
     }
 }
 

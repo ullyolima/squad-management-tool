@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import FieldPlayer from '../FieldPlayer/FieldPlayer'
-import GeneralButton from '../GeneralButton/GeneralButton'
 import Player from '../Player/Player'
 import Tag from '../Tag/Tag'
 import './style.css'
+import api from '../../service/api'
 
 function CardBodyCreateTeam() {
+
+    const [players, setPlayers] = useState([])
+
+    useEffect(() => {
+        api.getPlayers().then(res => setPlayers(res))
+    }, [setPlayers])
+
+    const teamData = {
+        id: "",
+        name: " ",
+        description: "",
+        players: [],
+        tags: [],
+        avgage: 0,
+        type: "",
+        teamwebsite: "",
+        formation: 0
+    }
+
+    const [form, setForm] = useState(teamData)
+
+
     return (
         <div className="card-body__create-team">
             <form action="">
@@ -15,7 +37,7 @@ function CardBodyCreateTeam() {
                         <div className="form-column">
                             <div className="form-group form-team-name">
                                 <label htmlFor="form__team-name" className="input-title">Team name</label>
-                                <input type="text" id="form__team-name" placeholder="Insert team name" required />
+                                <input onChange={(e) => setForm(teamData.name = e.target.value)} type="text" id="form__team-name" placeholder="Insert team name" required />
                             </div>
                             <div className="form-team-description">
                                 <label htmlFor="form__team-description" className="input-title">Description</label>
@@ -29,7 +51,7 @@ function CardBodyCreateTeam() {
                             </div>
                             <div className="form-group form-team-type">
                                 <span className="input-title">Team type</span>
-                                <input type="radio" name="form-team-type" id="form__team-real" value="real" checked />
+                                <input type="radio" name="form-team-type" id="form__team-real" value="real" defaultChecked />
                                 <label htmlFor="form__team-real">Real</label>
                                 <input type="radio" name="form-team-type" id="form__team-fantasy" value="fantasy" />
                                 <label htmlFor="">Fantasy</label>
@@ -115,16 +137,14 @@ function CardBodyCreateTeam() {
                             </div>
                         </div> */}
                             </div>
-                            <button type="submit" className="submit-button">Save</button>
+                            <button onClick={console.log(form)} type="submit" className="submit-button">Save</button>
                         </div>
                         <div className="form-column">
                             <div className="search-players">
                                 <label htmlFor="input-search-players" className="input-title">Search Players</label>
                                 <input type="text" id="input-search-players" className="search-players__input" />
                                 <div className="search-player__result">
-                                    <Player playerName="Cristiano Ronaldo" playerAge="32" playerNacionality="Portugual" />
-                                    <Player playerName="Ronaldo Luiz de Alves" playerAge="28" playerNacionality="Brazil" />
-                                    <Player playerName="Ronaldo Francisco" playerAge="18" playerNacionality="Brazil" />
+                                    {players.map(player => <Player key={player.id} id={player.id} playerName={player.name} playerAge={player.age} playerNacionality={player.nacionality} />)}     
                                 </div>
                             </div>
                         </div>
