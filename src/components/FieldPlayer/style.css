@@ -38,7 +38,7 @@
 }
 
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1020px) {
     .field-player {
         position: relative;
         width: 80px;

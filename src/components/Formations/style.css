@@ -19,6 +19,67 @@
 }
 
 [data-formation="3223"] .one {
+    top: 90px;
+    left: 20px;
+}
+
+[data-formation="3223"] .two {
+    top: 100px;
+}
+
+[data-formation="3223"] .three {
+    top: 90px;
+    right: 20px;
+}
+
+[data-formation="3223"] .four,
+[data-formation="3223"] .five {
+    top: 160px;
+}
+
+[data-formation="3223"] .four {
+    left: 60px;
+}
+
+[data-formation="3223"] .five {
+    right: 60px;
+}
+
+[data-formation="3223"] .six,
+[data-formation="3223"] .seven {
+    bottom: 160px;
+}
+
+[data-formation="3223"] .six {
+    left: 60px;
+}
+
+[data-formation="3223"] .seven {
+    right: 60px;
+}
+
+[data-formation="3223"] .eight {
+    bottom: 90px;
+    left: 20px;
+}
+
+[data-formation="3223"] .nine {
+    bottom: 90px;
+    right: 20px;
+}
+
+[data-formation="3223"] .ten {
+    bottom: 60px;
+}
+
+@media screen and (min-width: 760px) {
+[data-formation="3223"] .two,
+[data-formation="3223"] .ten {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+[data-formation="3223"] .one {
     top: 130px;
     left: 20px;
 }
@@ -37,13 +98,6 @@
     top: 220px;
 }
 
-[data-formation="3223"] .four {
-    left: 80px;
-}
-
-[data-formation="3223"] .five {
-    right: 80px;
-}
 
 [data-formation="3223"] .six,
 [data-formation="3223"] .seven {
@@ -51,12 +105,9 @@
 }
 
 [data-formation="3223"] .six {
-    left: 90px;
+    left: 60px;
 }
 
-[data-formation="3223"] .seven {
-    right: 90px;
-}
 
 [data-formation="3223"] .eight {
     bottom: 90px;
@@ -68,7 +119,41 @@
     right: 20px;
 }
 
-[data-formation="3223"] .ten {
-    bottom: 60px;
+}
+
+
+@media screen and (min-width: 1020px) {
+    
+    [data-formation="3223"] .four {
+        left: 80px;
+    }
+    
+    [data-formation="3223"] .five {
+        right: 80px;
+    }
+    
+    [data-formation="3223"] .six,
+    [data-formation="3223"] .seven {
+        bottom: 200px;
+    }
+    
+    [data-formation="3223"] .six {
+        left: 90px;
+    }
+    
+    [data-formation="3223"] .seven {
+        right: 90px;
+    }
+    
+    [data-formation="3223"] .eight {
+        bottom: 90px;
+        left: 20px;
+    }
+    
+    [data-formation="3223"] .nine {
+        bottom: 90px;
+        right: 20px;
+    }
+
 }
 
