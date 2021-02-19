@@ -2,8 +2,8 @@
     position: absolute;
 }
 
-.kepper {
-    bottom: 15px;
+.keeper {
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -13,41 +13,41 @@
     3-2-2-3
 *==============*/
 [data-formation="3223"] .two,
-[data-formation="3223"] .eight {
+[data-formation="3223"] .ten {
     left: 50%;
     transform: translateX(-50%);
 }
 
 [data-formation="3223"] .one {
-    top: 80px;
-    left: 10px;
+    top: 130px;
+    left: 20px;
 }
 
 [data-formation="3223"] .two {
-    top: 70px;
+    top: 120px;
 }
 
 [data-formation="3223"] .three {
-    top: 80px;
-    right: 10px;
+    top: 130px;
+    right: 20px;
 }
 
 [data-formation="3223"] .four,
 [data-formation="3223"] .five {
-    top: 190px;
+    top: 220px;
 }
 
 [data-formation="3223"] .four {
-    left: 90px;
+    left: 80px;
 }
 
 [data-formation="3223"] .five {
-    right: 90px;
+    right: 80px;
 }
 
 [data-formation="3223"] .six,
 [data-formation="3223"] .seven {
-    bottom: 190px;
+    bottom: 200px;
 }
 
 [data-formation="3223"] .six {
@@ -59,17 +59,16 @@
 }
 
 [data-formation="3223"] .eight {
-    bottom: 60px;
-    left: 10px;
+    bottom: 90px;
+    left: 20px;
 }
 
 [data-formation="3223"] .nine {
-    bottom: 60px;
-    left: 10px;
+    bottom: 90px;
+    right: 20px;
 }
 
 [data-formation="3223"] .ten {
-    top: 10px;
-    left: 10px;
+    bottom: 60px;
 }
 

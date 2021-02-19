@@ -33,7 +33,10 @@ function CardBodyCreateTeam() {
     }, [setPlayers])
 
     useEffect(() => {
-        api.getTeamsById(id).then(res => setForm(res))
+        api.getTeamsById(id).then(res => {
+            setForm(res)
+            setSelectedPlayers(res.players)
+        })
     }, [setForm, id])
     
     function handleChange(e) {
@@ -111,7 +114,7 @@ function CardBodyCreateTeam() {
                             <div className="soccer-field">
                                 <div className="field-circle"></div>
                                 <div className="field-line"></div>
-                                <Formations formationNumber="3223" />                                
+                                <Formations selectedPlayers={players.filter(player => player.id === selectedPlayers.find(selectedPlayer => selectedPlayer === player.id))} formationNumber="3223" />                                
                             </div>
                             <button type="submit" className="submit-button">Save</button>
                         </div>
