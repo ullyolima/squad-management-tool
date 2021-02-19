@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Welcome to Squad management Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application was made for the position of Junior developer at Venturus 
 
-## Available Scripts
+## Clone
 
-In the project directory, you can run:
+To clone the application, make sure tha you have git and node installed and in terminal use:
+git clone 
+npm install
+npm start
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The purpose of the application is to help the user build a team by choosing the players and saving this configuration
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Framework
+The framework used was ReactJS.
 
-### `npm test`
+## Layout Page
+The entire page was done in pure CSS. CSS is currently my specialty, so it was where I had the greatest affection in building the application. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implemented function
+- [x] Complete CRUD
+- [x] Highest and Lowest AVG age filter
+- [x] Populating the player search field with the player from API 
+- [x] Team site require a valid URL
+- [x] Save store the players in the team  
+- [x] Whenever user clicks on a given team, it should open team configuration page.
+- [x] The selected player has his initial name on circle on soccer field
 
-### `npm run build`
+## Non Implemented function
+- [ ] Tag creation
+- [ ] Drag'n drop
+- [ ] Tests
+- [ ] The formation change position for each option
+- [ ] Search player filter
+- [ ] Name and description sort
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## adapted Function
+- On creation team page, the selected players are pushed to an array and submitted together the form.
+- The player selected change the circle in soccer field with his initial name.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Bugs
+Due to the short time this bugs have not been resolved. 
+- When team is deleted and edited the page needs to be forced reload.
+- The player selection is not limited only to 11 players creating aditional circles on soccer field.
+- Players are only ranked on the field according to the selection order 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About the experience
+The experience of this test was very rich for me, I was often crazy, but many things I learned in google searches and stackoverflow together with support from dev communities. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deploy was made in Netlify: https://management-teams.netlify.app
