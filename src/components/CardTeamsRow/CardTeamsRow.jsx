@@ -5,6 +5,8 @@ import shareIcon from "../../assets/img/icon-share.svg"
 import editIcon from "../../assets/img/icon-edit.svg"
 import classNames from "classnames"
 import api from '../../service/api'
+import { Link } from 'react-router-dom'
+
 
 function CardTeamsRow({teamName, teamDescription, id}) {
 
@@ -18,7 +20,7 @@ function CardTeamsRow({teamName, teamDescription, id}) {
     
     function handleDelete(id) {
         api.deleteTeam(id)
-        window.location.reload()
+        // window.location.reload()
     }
 
     return (
@@ -32,7 +34,7 @@ function CardTeamsRow({teamName, teamDescription, id}) {
             <div className="team-options">
                 <a className="delete-btn"><img src={trashIcon} onClick={() => handleDelete(id)} alt="Delete button"/></a>
                 <a className="share-btn"><img src={shareIcon} alt="Share button"/></a>
-                <a className="edit-btn"><img src={editIcon} alt="Edit button"/></a>
+                <Link className="edit-btn" to={`/create-your-team/${id}`}><img src={editIcon} alt="Edit button"/></Link>
             </div>
         </div>
     )

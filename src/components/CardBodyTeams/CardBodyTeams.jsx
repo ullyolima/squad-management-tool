@@ -11,7 +11,7 @@ function CardBodyTeams() {
     useEffect(() => {
         api.getTeams().then(res => setTeams(res))
     }, [setTeams])
-
+    
     return (
         <div className="card-body__teams">
             <div className="sort-buttons d-flex">

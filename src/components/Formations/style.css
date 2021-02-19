@@ -1,0 +1,75 @@
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .kepper {
+    position: absolute;
+}
+
+.kepper {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*=============*
+    3-2-2-3
+*==============*/
+[data-formation="3223"] .two,
+[data-formation="3223"] .eight {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+[data-formation="3223"] .one {
+    top: 80px;
+    left: 10px;
+}
+
+[data-formation="3223"] .two {
+    top: 70px;
+}
+
+[data-formation="3223"] .three {
+    top: 80px;
+    right: 10px;
+}
+
+[data-formation="3223"] .four,
+[data-formation="3223"] .five {
+    top: 190px;
+}
+
+[data-formation="3223"] .four {
+    left: 90px;
+}
+
+[data-formation="3223"] .five {
+    right: 90px;
+}
+
+[data-formation="3223"] .six,
+[data-formation="3223"] .seven {
+    bottom: 190px;
+}
+
+[data-formation="3223"] .six {
+    left: 90px;
+}
+
+[data-formation="3223"] .seven {
+    right: 90px;
+}
+
+[data-formation="3223"] .eight {
+    bottom: 60px;
+    left: 10px;
+}
+
+[data-formation="3223"] .nine {
+    bottom: 60px;
+    left: 10px;
+}
+
+[data-formation="3223"] .ten {
+    top: 10px;
+    left: 10px;
+}
+

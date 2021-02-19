@@ -12,7 +12,7 @@ function LowestList() {
 
     return (
         <div className="lowest-list">
-            {lowestAvg.map(avgTeam => <CardTop5Row key={avgTeam.id} teamName={avgTeam.name} teamScore={avgTeam.avgage} />)}
+            {lowestAvg.map(LowAvgTeam => <CardTop5Row key={LowAvgTeam.id} teamName={LowAvgTeam.name} teamScore={LowAvgTeam.avgage} />)}
         </div>
     )
 }

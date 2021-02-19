@@ -7,6 +7,10 @@ export default {
         const teams = await api.get("teams")
         return teams.data
     }, 
+    async getTeamsById(id) {
+        const teams = await api.get(`teams/${id}`)
+        return teams.data
+    },
     async getHighestAvg() {
         const highestAvg = await api.get("teams?sortBy=avgage&order=desc&page=1&limit=5")
         return highestAvg.data
@@ -18,8 +22,11 @@ export default {
     async deleteTeam(id) {
         await api.delete(`teams/${id}`)
     },
-    async createTeam() {
-        await api.post("teams")
+    async createTeam(newTeam) {
+        await api.post("teams", newTeam)
+    },
+    async editTeam(id, editedTeam) {
+        await api.put(`teams/${id}`, editedTeam)
     },
     async getPlayers() {
         const players = await api.get("players?sortBy=name")

@@ -6,6 +6,10 @@
     justify-content: center; 
 }
 
+.header a {
+    color: #ffffff;
+}
+
 .container { 
     justify-content: space-between; 
 }

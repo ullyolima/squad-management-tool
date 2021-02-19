@@ -10,8 +10,9 @@ function RoutesConfig() {
         <BrowserRouter>
             <Header />
             <Switch>
-                <Route exact path="/" children={<MainContainer />} />
-                <Route path="/create-your-team" children={<CreateYourTeam />} />
+                <Route exact path="/" component={MainContainer} />
+                <Route exact path="/create-your-team" component={CreateYourTeam} />
+                <Route path="/create-your-team/:id" component={CreateYourTeam} />
             </Switch>    
             <Footer />    
         </BrowserRouter>
