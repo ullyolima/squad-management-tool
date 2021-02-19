@@ -126,7 +126,7 @@
 
 @media screen and (min-width: 1300px) {
     .picked-player {
-        min-height: calc(100vh - (var(--header-height) + var(--footer-height) + 442.92px + 3rem));
+        min-height: calc(100vh - (var(--header-height) + var(--footer-height) + 441px + 3rem));
         border-radius: 15px 15px 0 0;
     }
 }
